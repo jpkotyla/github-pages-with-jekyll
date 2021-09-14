@@ -1,5 +1,5 @@
 ---
-title: "JohnPaul Kotyla"
+title: "JohnPaul-Kotyla"
 ---
 
 Interests ...
