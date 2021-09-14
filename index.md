@@ -1,5 +1,5 @@
 ---
-title: "Welcome to my blog"
+title: "JohnPaul Kotyla"
 ---
 
-I'm glad you are here. I plan to talk about ...
+Interests ...
