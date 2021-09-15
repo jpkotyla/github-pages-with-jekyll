@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<style>
+h1 {
+font-weight: 700;
+}
+</style>
+
+<div class="home">
+  <!---
+  <h1 class="page-heading"> Featured </h1>
+  <ul class="post-list">
+      <li>
+        <h2>
+          <a class="post-link" href="/2018/09/10/python-etch-a-sketch.html"> Making Etch-a-Sketch Art With Python </a>
+        </h2>
+      </li>
+	  <li>
+        <h2>
+          <a class="post-link" href="/2018/04/10/reducing-elevator-awkwardness.html"> Numerically Reducing Elevator Awkwardness </a>
+        </h2>
+      </li>
+	  <li>
+        <h2>
+          <a class="post-link" href="/2017/05/28/python-video-loop-detection.html"> Detecting Fake Videos with Python </a>
+        </h2>
+      </li>
+  </ul>
+  <br><br>
+  -->
+  <h1 class="page-heading"> All Posts</h1>
+  
+  {{ content }}
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
